@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oswaldo Tapia | Portafolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .proyecto {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .contenedor {
+            text-align: center;
+        }
+        .imagen-centrada {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .texto {
+            margin-top: 20px;
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-item img {
+            margin-right: 10px;
+        }
+        .tech-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            position: relative;
+        }
+        .tech {
+            display: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .tech:first-child {
+            display: inline-block;
+        }
+
+        .tech:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <div id="inicio">
+        <nav class="navbar navbar-expand-lg navbar-white" style="background-color: rgba(255, 255, 255, 0);">
+            <a class="navbar-brand" href="index.html">Oswaldo Tapia</a>
+            <div class="navbar-collapse justify-content-center">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tecnologias">Tecnologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyecto">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!-- FIN -->
+
+<!-- PRESENTACIÓN -->
+    <div class="contenedor" style="margin: 30px;">
+        <img class="imagen-centrada" src="imagenes/foto.png" alt="Mi Imagen" style="width: 17%; height: 17%;">
+        <div class="texto">
+            <h1 style="margin: 30px;">¡Hola! Soy Oswaldo Tapia</h1>
+            <h2 style="margin: 30px;">Licenciado en Informática</h2>
+            <h3 style="margin: 30px;">FES - Cuautitlán | UNAM</h3></br>
+            <strong><h1 style="margin: 30px;">Frontend | Java | Php | SQL</h1></strong></br>
+        </div>
+    </div>
+<!-- FIN -->
+
+<!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="container py-4">
+        <h2>Sobre Mí</h2>
+        <p class="mb-6">¡Hola! Soy Oswaldo Tapia, un entusiasta del desarrollo principalmente el web. Me apasiona crear aplicaciones interactivas y escalables utilizando tecnologías modernas. Otra de mis aficiones es el diseño, no me limito a utilizar las herramientas tecnológicas necesarias para el desarrollo de software. </p>
+        <p class="mb-6">Tengo gran capacidad para adaptarme a todo tipo de entornos y aportar siempre lo mejor de mí. Me caracterizó por mi facilidad del trabajo en equipo y mi entusiasmo por aprender y desarrollar mis habilidades.</p>
+        <p>Actualmente estoy trabajando en mejorar mis habilidades</p>
+        </br>
+    </section>
+<!-- FIN -->
+
+<!-- TECNOLOGÍAS -->
+    <section id="tecnologias" class="container py-4">
+        <h2>Tecnologías</h2>
+        <div class="tech-container" id="tech-container">
+            <img src="imagenes/html-5.png" class="tech" alt="HTML" id="tech-1" width="200px">
+            <img src="imagenes/css-3.png" class="tech" alt="CSS" id="tech-2" width="200px">
+            <img src="imagenes/javascript.png" class="tech" alt="JavaScript" id="tech-3" width="200px">
+            <img src="imagenes/php.png" class="tech" alt="PHP" id="tech-4" width="200px">
+            <img src="imagenes/sql.png" class="tech" alt="SQL" id="tech-5" width="200px">
+            <img src="imagenes/java.png" class="tech" alt="Java" id="tech-6" width="200px">
+            <img src="imagenes/c.png" class="tech" alt="C" id="tech-7" width="200px">
+            <img src="imagenes/cMasMas.png" class="tech" alt="C++" id="tech-8" width="200px">
+            <img src="imagenes/cSharp.png" class="tech" alt="C#" id="tech-9" width="200px">
+            <img src="imagenes/vb.png" class="tech" alt="Visual Basic" id="tech-10" width="200px">
+        </div>
+    </section>
+<!-- FIN -->
+
+<!-- PROYECTOS -->
+    <section id="proyecto" class="container py-4">
+        <div class="container">
+            <h2>Proyectos Destacados</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="margin: 10px; background-color: rgba(255, 255, 255, 0);">
+                        <img class='card-img-top' src='imagenes/proyecto1.png' alt='Proyecto1'>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">MODAFESC</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="proyecto1.html" class="btn btn-primary" target="_blank" style="width: 225px;">Descripción</a>
+                                <a href="enlace-al-proyecto" class="btn btn-primary" target="_blank" style="width: 225px;">Repositorio</a>
+                            </div>
+                            <div style="width: 100%; height: 10px;"></div>
+                            <div>
+                                <img src="imagenes/html-5.png" alt="HTML" width="50px">
+                                <img src="imagenes/css-3.png" alt="CSS" width="50px">
+                                <img src="imagenes/javascript.png" alt="JavaScript" width="50px">
+                                <img src="imagenes/php.png" alt="PHP" width="50px">
+                                <img src="imagenes/sql.png" alt="SQL" width="50px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="margin: 10px; background-color: rgba(255, 255, 255, 0);">
+                        <img class='card-img-top' src='imagenes/proyecto2.png' alt='Proyecto2'>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Omelika</h5>
+                            <div class="d-flex justify-content-between">
+                                <a href="proyecto2.html" class="btn btn-primary" target="_blank" style="width: 225px;">Descripción</a>
+                                <a href="enlace-al-proyecto" class="btn btn-primary" target="_blank" style="width: 225px;">Repositorio</a>
+                            </div>
+                            <div style="width: 100%; height: 10px;"></div>
+                            <div>
+                                <img src="imagenes/html-5.png" alt="HTML" width="50px">
+                                <img src="imagenes/css-3.png" alt="CSS" width="50px">
+                                <img src="imagenes/javascript.png" alt="JavaScript" width="50px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- FIN -->
+
+<!-- CONTACTO -->
+    <section id="contacto" class="container py-4">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de:</p>
+        <ul class="contact-list">
+            <li class="contact-item">
+                <img src="imagenes/gmail.png" width="25px" alt="Gmail Icon">
+                <span>joswaldo.tap22@gmail.com</span>
+            </li>
+            <li class="contact-item">
+                <img src="imagenes/linkedin.png" width="25px" alt="Gmail Icon">
+                <span>
+                    <a href="https://www.linkedin.com/in/jesus-oswaldo-tapia-martinez-1a2946227/" target="_blank">Jesus Oswaldo Tapia Martinez</a>
+                </span>
+            </li>
+            <li class="contact-item">
+                <img src="imagenes/github.png" width="25px" alt="Gmail Icon">
+                <span>
+                    <a href="https://github.com/OswaldoTap28" target="_blank">OswaldoTap28</a>
+                </span>
+            </li>
+        </ul>
+    </section>
+<!-- FIN -->
+
+<!-- FOOTER -->
+    <div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                        <a class="nav-link" href="#tecnologias">Tecnologías</a>
+                        <a class="nav-link" href="#proyecto">Proyectos</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-muted">&copy; 2024 Oswaldo Tapia | Hecho con ❤️</p>
+        </footer>
+    </div>
+<!-- FIN -->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const techs = document.querySelectorAll('.tech');
+            const totalTechs = techs.length;
+            const techsToShow = 3;
+            let index = 0;
+
+            function showNextTechs() {
+                // Ocultar todas las tecnologías
+                techs.forEach(tech => tech.style.display = 'none');
+                
+                // Mostrar el siguiente grupo de 3 tecnologías
+                for (let i = 0; i < techsToShow; i++) {
+                    const currentIndex = (index + i) % totalTechs;
+                    techs[currentIndex].style.display = 'inline-block';
+                }
+
+                // Actualizar el índice para el próximo grupo
+                index = (index + techsToShow) % totalTechs;
+            }
+
+            // Mostrar el primer grupo de 3 tecnologías al cargar
+            showNextTechs();
+
+            // Cambiar el grupo de tecnologías cada 1.5 segundos
+            setInterval(showNextTechs, 1500);
+        });
+
+    </script>
+
+</body>
+</html>
