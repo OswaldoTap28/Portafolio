@@ -150,7 +150,7 @@
                             <h5 class="card-title">MODAFESC</h5>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="proyecto1.html" class="btn btn-primary" target="_blank" style="width: 225px;">Descripción</a>
-                                <a href="https://github.com/OswaldoTap28/MODA-FESC" class="btn btn-primary" target="_blank" style="width: 225px;">Repositorio</a>
+                                <a href="" class="btn btn-primary" target="_blank" style="width: 225px;">Repositorio</a>
                             </div>
                             <div style="width: 100%; height: 10px;"></div>
                             <div>
@@ -170,7 +170,7 @@
                             <h5 class="card-title">Omelika</h5>
                             <div class="d-flex justify-content-between">
                                 <a href="proyecto2.html" class="btn btn-primary" target="_blank" style="width: 225px;">Descripción</a>
-                                <a href="https://github.com/OswaldoTap28/Omelika" class="btn btn-primary" target="_blank" style="width: 225px;">Repositorio</a>
+                                <a href="" class="btn btn-primary" target="_blank" style="width: 225px;">Repositorio</a>
                             </div>
                             <div style="width: 100%; height: 10px;"></div>
                             <div>
@@ -241,23 +241,18 @@
             let index = 0;
 
             function showNextTechs() {
-                // Ocultar todas las tecnologías
                 techs.forEach(tech => tech.style.display = 'none');
                 
-                // Mostrar el siguiente grupo de 3 tecnologías
                 for (let i = 0; i < techsToShow; i++) {
                     const currentIndex = (index + i) % totalTechs;
                     techs[currentIndex].style.display = 'inline-block';
                 }
 
-                // Actualizar el índice para el próximo grupo
                 index = (index + techsToShow) % totalTechs;
             }
 
-            // Mostrar el primer grupo de 3 tecnologías al cargar
             showNextTechs();
 
-            // Cambiar el grupo de tecnologías cada 1.5 segundos
             setInterval(showNextTechs, 1500);
         });
 
